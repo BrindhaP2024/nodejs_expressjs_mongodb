@@ -1,0 +1,3 @@
+Blocking: A blocking operation halts the execution of the program until it completes its task. It blocks the event loop, meaning other operations cannot proceed until the current one finishes.
+
+Non-Blocking: A non-blocking operation allows the program to continue executing other tasks while waiting for the operation to finish. It does not block the event loop, making it ideal for I/O-bound tasks (e.g., reading files, making network requests).
