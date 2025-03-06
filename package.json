@@ -1,19 +1,8 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BrindhaP2024/nodejs.git"
-  },
-  "author": "Brindha",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BrindhaP2024/nodejs/issues"
-  },
-  "homepage": "https://github.com/BrindhaP2024/nodejs#readme",
-  "description": ""
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

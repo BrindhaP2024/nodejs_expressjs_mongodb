@@ -12,3 +12,19 @@ server.listen(port,hostname,() =>{
     console.log(`server is running at http://${hostname}:${port}/`);
     
 });
+
+// import { createServer } from 'node:https';
+// const hostname = '127.0.0.1';
+// const port = 4000;
+// const server = createServer((req,res)=>{
+//     res.statusCode =200;
+//     res.setHeader('content-type','text/plain');
+//     res.end('node js learing');
+
+// });
+
+// server.listen(port,hostname,()=>{
+//     console.log(`server started at http://${hostname}:${port}/`);
+    
+// });
+
