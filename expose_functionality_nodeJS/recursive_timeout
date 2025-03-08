@@ -1,0 +1,20 @@
+//polling is happening here
+
+function checkNotifications() {
+    console.log("Checking for new notifications...");
+
+    const hasNewNotifications = Math.random() < 0.5; 
+  
+    if (hasNewNotifications) {
+      console.log("New notifications found! Fetching data...");
+      var nextCheck = 5000;
+    } else {
+      console.log("No new notifications. Will check later...");
+      var nextCheck = 20000;
+    }
+
+    setTimeout(checkNotifications, nextCheck);
+  }
+  
+  checkNotifications();
+  
