@@ -13,6 +13,7 @@ require("dotenv").config({ path: "/home/asplap2983/nodejs/file handlings/.env.pr
 
 require("dotenv").config({ path: "/home/asplap2983/nodejs/file handlings/.env.production" });
 
+
 // Accessing environment variables
 console.log("PORT:", process.env.port);
 console.log("DB_URL:", process.env.db_url);
@@ -25,3 +26,6 @@ console.log("DB_HOST:", process.env.DB_HOST);
 // Print all environment variables (for debugging)
 console.log(process.env);
 console.log(require.cache);
+
+
+console.log(process.argv);

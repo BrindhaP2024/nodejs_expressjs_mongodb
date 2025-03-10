@@ -2,6 +2,10 @@ const fs = require('fs');
 
 console.log('Start of script');
 
+// Check Phase 
+setImmediate(() => {
+  console.log('setImmediate() - Executed in Check Phase');
+});
 // Process.nextTick
 process.nextTick(() => {
   console.log('process.nextTick() - Executed first');
@@ -12,10 +16,7 @@ setTimeout(() => {
   console.log('setTimeout() - Executed in Timers Phase');
 }, 1000);
 
-// Check Phase 
-setImmediate(() => {
-  console.log('setImmediate() - Executed in Check Phase');
-});
+
 
 // Poll Phase
 fs.readFile(__filename, () => {
