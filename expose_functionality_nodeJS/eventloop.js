@@ -22,18 +22,21 @@ setTimeout(() => {
 fs.readFile(__filename, () => {
   console.log('fs.readFile() - Executed in Poll Phase');
 
-  // Inside I/O callback
   setImmediate(() => console.log('setImmediate inside fs.readFile()'));
   setTimeout(() => console.log('setTimeout inside fs.readFile()'), 2000);
 
   process.nextTick(() => console.log('process.nextTick inside fs.readFile()'));
 });
 
-// Close Callbacks Phase
 const readableStream = fs.createReadStream(__filename);
-readableStream.close(); // Close the stream immediately
+readableStream.close(); 
 readableStream.on('close', () => {
   console.log('Stream close event - Executed in Close Callbacks Phase');
 });
 
 console.log('End of script');
+
+// console.log(__dirname); 
+// console.log(__filename); 
+
+console.log(module.id);

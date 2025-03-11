@@ -9,8 +9,7 @@ module.exports = {
     showPath: () => console.log("Current Directory:", __dirname),
 };
 
-// Demonstrating caching
 console.log("Module A Loaded");
 
 // Writing to a file (example of fs usage)
-fs.writeFileSync(path.join(__dirname, 'text.txt'), "Hello, Node.js!");
+fs.writeFileSync(path.join(__dirname, 'text.txt'), "learn node js!");

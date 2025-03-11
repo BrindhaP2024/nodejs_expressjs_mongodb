@@ -43,7 +43,6 @@ wss.on("connection", (ws) => {
 
 console.log("WebSocket Server running on ws://localhost:3000");
 
-// HTTP Client to Make an API Request
 const options = {
     hostname: "jsonplaceholder.typicode.com",
     path: "/posts/1",

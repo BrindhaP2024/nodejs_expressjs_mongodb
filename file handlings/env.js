@@ -4,6 +4,7 @@
 
 // console.log(process.env);
 
+
 // console.log("PORT:", process.env.PORT);
 // console.log("DB_HOST:", process.env.DB_HOST);
 // console.log("API_KEY:", process.env.API_KEY);
@@ -29,3 +30,4 @@ console.log(require.cache);
 
 
 console.log(process.argv);
+console.error('one');

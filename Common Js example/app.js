@@ -6,5 +6,7 @@ console.log(math.add(2,8));
 
 // console.log("getFullName",getFullName("NodeJs"));
 console.log("FullName:", math.getFullName("NodeJs")); 
+console.log(require.cache); // Shows cached modules
+
 
 
