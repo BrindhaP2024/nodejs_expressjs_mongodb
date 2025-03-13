@@ -10,9 +10,9 @@
 // console.log("API_KEY:", process.env.API_KEY);
 
 
-require("dotenv").config({ path: "/home/asplap2983/nodejs/file handlings/.env.production" });
+// require("dotenv").config({ path: "/home/asplap2983/nodejs/file handlings/.env.production" });
 
-require("dotenv").config({ path: "/home/asplap2983/nodejs/file handlings/.env.production" });
+const env = require("dotenv").config({ path: "/home/asplap2983/nodejs/file handlings/.env.production" });
 
 
 // Accessing environment variables

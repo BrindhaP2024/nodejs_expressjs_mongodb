@@ -1,0 +1,9 @@
+You can't run the debugger and your server on the same port. Using --inspect-brk=localhost:3000 tells it to run the debugger on port 3000 which is where your server already is. Why are you passing a port number for --inspect-brk at all? – 
+jfriend00
+Commented Apr 11, 2018 at 4:44
+@jfriend00, I didn't run them at the same time, I tried to run debugger on the same port like the way I run my server without debugger. Because my client is using port 3000 to reach my server. – 
+ycshao
+
+I think I got what you meant, --inspect-brk=localhost:3000 will try to attach debugger to the same port as the server is running. I didn't realize server and debugger are different process. – 
+ycshao
+Commented Apr 12, 2018 at 3:15

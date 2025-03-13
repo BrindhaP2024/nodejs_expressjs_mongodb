@@ -1,11 +1,19 @@
-{  "type":"module",
-  "name": "buffers",
+{
+  "type": "module",
+  "name": "file-handlings",
   "version": "1.0.0",
-  "main": "blob.js",
+  "main": "index.js",
   "scripts": {
+    "dev": "node --inspect index.js", 
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Brindha",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "minimist": "^1.2.8",
+    "path": "^0.12.7"
+  }
 }

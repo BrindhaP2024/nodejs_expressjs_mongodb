@@ -12,7 +12,7 @@ console.log("basename with suffix:", path.basename(filePathWin, ".txt"));
 console.log("delimiter:", path.delimiter);
 
 console.log("dirname:", path.dirname(filePathWin));
-
+    
 console.log("extname:", path.extname(filePathWin));
 
 const pathObject = { dir: "/home/brindha/Documents", base: "example.txt" };
