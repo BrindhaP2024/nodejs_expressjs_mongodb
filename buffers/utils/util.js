@@ -56,13 +56,7 @@ console.log(types.isPromise({ then: () => {} })); // false
 console.log(types.isPromise(123)); // false
 console.log(types.isPromise(null)); // false
 
-// const buffer = Buffer.from('Hello util');
 
-// console.log(types.isBuffer(buffer)); // true
-// console.log(types.isBuffer(Buffer.alloc(10))); // true
-// console.log(types.isBuffer('Hello')); // false
-// console.log(types.isBuffer([])); // false
-// console.log(types.isBuffer(null)); // false
 
 //util.deprecate() - Mark function as deprecated with a warning message
 const oldFunction = deprecate(() => {
