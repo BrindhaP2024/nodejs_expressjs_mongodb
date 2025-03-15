@@ -1,7 +1,6 @@
 const async_hooks = require('async_hooks');
 
 const hook = async_hooks.createHook({
-    // Called when an async resource is initialized
     init(asyncId, type, triggerAsyncId, resource) {
         console.log(`Init: ${asyncId}, Type: ${type}, Trigger: ${triggerAsyncId}`);
     },
