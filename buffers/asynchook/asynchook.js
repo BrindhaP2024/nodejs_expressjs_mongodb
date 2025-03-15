@@ -16,3 +16,11 @@ const hook = createHook({
 });
 
 hook.enable();
+
+console.log(async_hooks.executionAsyncId());  // Logs the current async resource's ID
+
+
+promiseResolve(asyncId); {
+  console.log(`Promise with ID ${asyncId} resolved.`);
+}
+  
