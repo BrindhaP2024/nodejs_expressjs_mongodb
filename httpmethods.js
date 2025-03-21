@@ -19,12 +19,12 @@ app.get("/users/:id", (req, res) => {
 
 app.post("/users", (req, res) => {
   const newUser = {
-    id: users.length + 1, // Auto-increment ID
+    id: users.length + 1,
     name: req.body.name,
     email: req.body.email
   };
   users.push(newUser);
-  res.status(201).json(newUser); // 201 = Created
+  res.status(201).json(newUser); 
 });
 
 app.put("/users/:id", (req, res) => {
@@ -45,22 +45,19 @@ app.patch("/users/:id", (req, res) => {
   res.json(user);
 });
 
-// 📌 DELETE - Remove a user
+
 app.delete("/users/:id", (req, res) => {
   users = users.filter(u => u.id !== parseInt(req.params.id));
   res.json({ message: "User deleted successfully" });
 });
 
-// 📌 OPTIONS - Show allowed HTTP methods
 app.options("/users", (req, res) => {
   res.set("Allow", "GET, POST, PUT, PATCH, DELETE, OPTIONS").send();
 });
 
-// 📌 HEAD - Return headers without response body
 app.head("/users", (req, res) => {
   res.set("Custom-Header", "Hello-World").status(200).end();
 });
 
-// Start Server
 const PORT = 3000;
 app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
