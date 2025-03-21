@@ -4,7 +4,7 @@ app.use(json());
 
 let users = [
   { id: 1, name: "Larvel", email: "larvel@example.com" },
-  { id: 2, name: "Jack", email: "jacl@example.com" }
+  { id: 2, name: "Jack", email: "jack@example.com" }
 ];
 
 app.get("/users", (req, res) => {
@@ -60,4 +60,4 @@ app.head("/users", (req, res) => {
 });
 
 const PORT = 3000;
-app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(` Server running on http://localhost:${PORT}`));

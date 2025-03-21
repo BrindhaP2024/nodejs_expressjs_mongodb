@@ -1,10 +1,10 @@
-const cluster = require('cluster');
-const os = require('os');
+import { isMaster, fork } from 'cluster';
+import { cpus } from 'os';
 
-if (cluster.isMaster) {
-  const numCPUs = os.cpus().length;
+if (isMaster) {
+  const numCPUs = cpus().length;
   for (let i = 0; i < numCPUs; i++) {
-    cluster.fork(); 
+    fork(); 
   }
 } else {
   require('./app'); 
